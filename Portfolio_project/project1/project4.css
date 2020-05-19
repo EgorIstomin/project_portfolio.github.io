@@ -1,0 +1,429 @@
+@font-face { 
+    font-family: "firesans2";
+    src: url(firesans2.ttf)
+}
+@font-face { 
+    font-family: "firesans3";
+    src: url(firesans3.ttf);
+}
+
+@font-face { 
+    font-family: "firesans";
+    src: url(firesans.ttf);
+}
+@font-face { 
+    font-family: "fontawes";
+    src: url(fontawesome.otf)
+}
+* {
+    margin: 0;
+    padding: 0;
+   }
+body { 
+ background-color: #f6f6f6;
+ height: 100vh;
+}
+.navbar { 
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+    display: flex;
+    width: auto;
+    height: 80px;
+}
+.bender { 
+    cursor: pointer;
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 64px;
+}
+.navbar_left { 
+    margin-left: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar_left p { 
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: "firesans";
+    color: rgb(65, 65, 65);
+}
+.navbar_right { 
+    margin-left: 350px;
+}
+.contacts { 
+    margin-left: 126px;
+    width: 250px;
+}
+.contacts p { 
+   
+    margin-top: 25px;
+    font-size: 18px;
+    font-family: "firesans";
+    color: rgb(50, 195, 229);
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+.contacts p:hover { 
+    cursor: pointer;
+    color: red; 
+}
+.block1 { 
+    margin-top: 10px;
+    border-radius: 7px;
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(222, 222, 222);
+    background-color: rgb(255, 255, 255);
+    width: 195px;
+    height: 136px;
+    z-index: 1;    
+    margin-left: 80px; 
+ }
+    
+.block1 { 
+    display: none;
+}
+.treungular {
+    position: absolute;
+    content: "";
+    left: 85px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #dddddd;
+}
+.treungular2 { 
+    position: absolute;
+    content: "";
+    left: 85px;
+    top: -9px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+}
+ .navbar_right:hover .block1 { 
+          display: block;
+ }
+ .line_blue { 
+     margin-top: 8px;
+     width: 120px;
+    border-bottom-width: 2px; /* Толщина линии внизу */
+    border-bottom-style: dotted; /* Стиль линии внизу */
+    border-bottom-color:  rgb(50, 195, 229)/* Цвет линии внизу */
+    }
+.contacts:hover .line_blue { 
+    border-bottom-color: red
+ }
+ .block1 p { 
+     margin-top: 11px;
+     z-index: 1;
+     font-size: 18px;
+     font-family: "firesans2";
+     color: rgb(65, 65, 65);
+     line-height: 1.556;
+     text-align: left;      
+      }
+.fa-envelope { 
+color: rgb(50, 195, 229); 
+margin-left: 15px;
+}
+.fa-phone { 
+color: rgb(50, 195, 229); 
+margin-left: 15px;
+}
+.fa-skype { 
+    color: rgb(50, 195, 229); 
+    margin-left: 15px;
+}
+.grey_line { 
+    background-color: rgb(90, 90, 90);
+     opacity: 0.102;
+     width: 191px;
+     height: 1px;
+     margin-top: 11px;
+     margin-bottom: -6px;
+}
+      
+.input { 
+    margin-left: -90px;
+    margin-top: -5px;
+  margin-right: auto;
+} 
+
+
+input[type="checkbox"] {
+     margin-top: 34px;
+        width: 40px;
+        height: 20px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: #c6c6c6;
+        outline: none;
+        border-radius: 50px;
+        box-shadow: inset 0 0 5px rgba(0,0,0, .2);
+        transition: 0.5s;
+        position: relative;
+      }
+
+    input:checked[type="checkbox"] {
+        background: #02a9f4;
+    }
+    input[type="checkbox"]::before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        background: #fff;
+        transform: scale(1.1);
+        box-shadow: 0 2px 5px rgba(0,0,0, .2);
+        transition: 0.5s;
+      }
+      input:checked[type="checkbox"]::before {
+        left: 25px;
+      }
+.navigation li a { 
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(65, 65, 65);
+    line-height: 1.333;
+    font-weight: bold;
+}
+.navigation { 
+    margin-left: auto;
+margin-top: 40px;
+margin-right:  0px;
+}
+
+.navigation li { 
+    margin-right: 4px;
+list-style-type: none;
+margin-bottom: 18px;
+}
+.blueline { 
+    margin-left: 14px;
+    margin-top: 110px;
+    height: 45px;
+    width: 6px;
+}
+.blue_img { 
+    margin-right: 20px;
+
+}
+ .content { 
+     display: flex;
+     justify-content: space-between;
+ }
+ .description { 
+     margin-top: 17px;
+     margin-right: auto
+     
+ }
+ .content { 
+     z-index: 6;
+ }
+ .flex { 
+     display: flex;
+     justify-content: space-between;
+ }
+ .flex2 { 
+     margin-top: 15px;
+    display: flex;
+    justify-content: flex-start
+}
+ .description h1 { 
+     margin-bottom: 20px;
+     color: rgb(65, 65, 65);
+     font-size: 35px;
+     text-align: left;
+     font-family: 'firesans';
+     margin-left: 18px;
+ }
+.description_block { 
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+    width: 220px;
+    height: 281px;
+}
+.description_block img { 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.description_block h2 { 
+    margin-left: 18px;
+    margin-top: 15px;
+    font-size: 21px;
+    font-family: "firesans";
+    color: rgb(51, 193, 227);
+    line-height: 1.143;
+    text-align: left;
+}
+.block_element i p { 
+    margin-top: -15px;
+    font-size: 14px;
+    color: rgb(174, 174, 174);
+    font-family: 'firesans';
+    font-weight: bold;
+}
+.description_block:hover  h2  { 
+    color: red;
+    cursor: pointer;
+}
+
+.fa-mobile {
+    color: rgb(174, 174, 174);
+    margin-left: 18px;
+    margin-top: 10px;
+}
+.fa-desktop { 
+    color: rgb(174, 174, 174);
+    margin-left: 18px;
+    margin-top: 10px;
+}
+.dealsApp {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1200px;
+    height: 817px;
+    z-index: 44;
+  }
+  
+
+.description_block p { 
+    margin-left: 18px;
+    font-size: 14px;
+    font-family: "firesans";
+    color: rgb(65, 65, 65);
+    font-weight: 100;
+    text-align: left; 
+}
+
+.down { 
+    height: 40px;
+    position: fixed; 
+    left: 0; bottom: 0; 
+    padding: 6px; 
+    background-color: rgb(65, 65, 65);
+    color: #fff; /* Цвет текста */
+    width: 100%
+}
+.down_info { 
+    margin-right: 489px;
+    margin-left: auto;
+}
+.down_info p { 
+    margin-top: 4px;
+    font-size: 14px;
+    color: rgb(156, 156, 156);
+    line-height: 2.857;
+    font-family: "firesans2";
+}
+.down { 
+    display: flex;
+    justify-content: space-around;
+}
+.down_social { 
+    margin-right: auto;
+    display: flex;
+    justify-content: baseline;
+}
+.social_icon { 
+    margin-top: 5px;
+    margin-right: 6px;
+}
+.fa-twitter { 
+    margin-left: 7px;
+    margin-top: 7px;
+    color: rgb(65, 65, 65);
+}
+.fa-facebook { 
+    margin-left: 9px;
+    margin-top: 7px;
+    color: rgb(65, 65, 65);
+}
+.social_icon { 
+    margin-right: 9px;
+    background-color: teal;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+.social_icon p { 
+    font-family: 'firesans3';
+    text-align: center;
+    margin-top: 4px;
+    color: rgb(65, 65, 65);
+}
+.social_icon:hover { 
+    background-color: violet;
+    cursor: pointer;
+}
+.fa-briefcase { 
+    color:  rgb(51, 193, 227);
+}
+.fa { 
+    margin-right: 8px;
+}
+.navigation li a { 
+    font-size: 18px;
+    font-family: "firesans";
+}
+.navigation .portfolio { 
+    color: rgb(51, 193, 227);
+}
+.blueline { 
+    margin-bottom: -13px;
+    margin-left: 14px;
+    margin-right: -19px;
+}
+.navigation li { 
+    text-align: right;
+}
+
+body.dark { 
+    background-color:#32221A;
+}
+.navbar.dark { 
+    background-color: #1E213D ;
+}
+
+.bender_up.dark { 
+    color: white;
+}
+
+.fa-rocket.dark { 
+    color: white;
+}
+.career_way.dark { 
+    color: white;
+}
+.portfolio.dark { 
+    color: white;
+}
+.fa-briefcase.dark { 
+    color: white;
+}
+.photo.dark { 
+    border: 6px solid #2C3337;
+}
+.about_text.dark { 
+color: white;
+}
+.text_main.dark { 
+   color: white; 
+}

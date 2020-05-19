@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "firasans_bold";
+    src: url(fonts/firesans__bold.ttf);
+   }
+ @font-face {
+    font-family: "firasans_medium";
+    src: url(fonts/firasans.ttf);
+   }
+ @font-face {
+    font-family: "firasans_regular";
+    src: url(fonts/firesans__regular.ttf);
+   }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+head {
+    display: none;
+}
+html, body {
+    height: 100%;
+}
+html {
+    box-sizing: border-box;
+}
+.page--hello {
+    background: url(../img/bg/bg.jpg) top center;
+} 
